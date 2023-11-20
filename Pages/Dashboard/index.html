@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <img class="logo-deitada" src="../../Img/logo-deitada.png" alt="" height="20px" width="155px">
+            <img class="logo" src="../../Img/logo.png" alt="" height="20px" width="80px">
+        </div>
+        <div class="side-content">
+            <div class="profile">
+                <div class="profile-img bg-img" style="background-image: url(../../Img/user.png);"></div>
+                <h4>José Wesley</h4>
+                <h5>RM553613</h5>
+                <small>Criador do projeto</small>
+            </div>
+        </div>
+        <div class="side-menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span><i class="bi bi-plus-lg"></i></span>
+                        <small>Novo</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <span><i class="bi bi-house-door"></i></span>
+                        <small>Dashboard</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="bi bi-bank"></i></span>
+                        <small>Contas</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="bi bi-cash-coin"></i></span>
+                        <small>Transações</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="bi bi-credit-card"></i></span>
+                        <small>Cartões de crédito</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="bi bi-gear"></i></span>
+                        <small>Configurações</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="bi bi-question-circle"></i></span>
+                        <small>Central de ajuda</small>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span><i style="font-size: 1.5rem;" class="bi bi-list"></i></span>
+                </label>
+
+                <div class="header-menu">
+                    <label for="">
+                        <span><i class="bi bi-search"></i></span>
+                    </label>
+
+                    <div class="notify-icon">
+                        <span><i class="bi bi-envelope"></i></span>
+                        <span class="notificação">3</span>
+                    </div>
+
+                    <div class="user">
+                        <div class="bg-img" style="background-image: url(../../Img/user.png);"></div>
+                        <a style="color: white;" href="../../index.html">
+                            <span><i class="bi bi-power"></i></span>
+                            <span>Sair</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="page-header">
+                <h2>Dashboard</h2>
+                <small>Home / Dashboard</small>
+            </div>
+
+            <div class="page-content">
+                <div class="analytics">
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <h2>R$2.000,00</h2>
+                                <span><i class="bi bi-bank banco"></i></span>
+                            </div>
+                            <div class="card-progress">
+                                <small>Saldo atual</small>
+                                <div class="card-indicator">
+                                    <div class="indicator"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <h2>R$4.000,00</h2>
+                                <span><i class="bi bi-arrow-up-circle-fill recebimentos"></i></span>
+                            </div>
+                            <div class="card-progress">
+                                <small>Recebimentos</small>
+                                <div class="card-indicator">
+                                    <div class="indicator"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <h2>R$2.000,00</h2>
+                                <span><i class="bi bi-arrow-down-circle-fill saida"></i></span>
+                            </div>
+                            <div class="card-progress">
+                                <small>Saidas</small>
+                                <div class="card-indicator">
+                                    <div class="indicator"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <h2>R$7.000,00</h2>
+                                <span><i class="bi bi-credit-card cartao"></i></span>
+                            </div>
+                            <div class="card-progress">
+                                <small>Cartão de crédito</small>
+                                <div class="card-indicator">
+                                    <div class="indicator"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="records table-responsive">
+                    <div class="record-header">
+                        <h2>Transações</h2>
+                        <div class="browse">
+                            <input type="search" placeholder="Procurar" class="record-search">
+                            <select name="" id="">
+                                <option value="">STATUS</option>
+                                <option value="">PENDENTE</option>
+                                <option value="">PAGO</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <th><span><i class="bi bi-chevron-expand"></i></span>Situação</th>
+                                    <th><span><i class="bi bi-chevron-expand"></i></span>Data</th>
+                                    <th>Descrição</th>
+                                    <th>Categoria</th>
+                                    <th>Conta</th>
+                                    <th><span><i class="bi bi-chevron-expand"></i></span>Valor</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td style="color: green;">
+                                        Pago <span><i class="bi bi-check-circle-fill"></i></span>
+                                    </td>
+                                    <td>18/11/2023</td>
+                                    <td>Compra do mês</td>
+                                    <td>
+                                        <span><i class="bi bi-cart3"></i></span>
+                                        Supermercado
+                                    </td>
+                                    <td>Nubank</td>
+                                    <td>R$204,00</td>
+                                    <td>
+                                        <div>
+                                            <a href="#"><span><i class="bi bi-pencil"></i></span></a>
+                                            <a href="#"><span><i class="bi bi-paperclip"></i></span></a>
+                                            <a href="#"><span><i class="bi bi-trash"></i></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: red;">
+                                        Pendente <span><i class="bi bi-x-circle-fill"></i></span>
+                                    </td>
+                                    <td>18/11/2023</td>
+                                    <td>Compra do mês</td>
+                                    <td>
+                                        <span><i class="bi bi-cart3"></i></span>
+                                        Supermercado
+                                    </td>
+                                    <td>Inter</td>
+                                    <td>R$400,00</td>
+                                    <td>
+                                        <div>
+                                            <a href="#"><span><i class="bi bi-pencil"></i></span></a>
+                                            <a href="#"><span><i class="bi bi-paperclip"></i></span></a>
+                                            <a href="#"><span><i class="bi bi-trash"></i></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: green;">
+                                        Pago <span><i class="bi bi-check-circle-fill"></i></span>
+                                    </td>
+                                    <td>18/11/2023</td>
+                                    <td>Compra do mês</td>
+                                    <td>
+                                        <span><i class="bi bi-cart3"></i></span>
+                                        Supermercado
+                                    </td>
+                                    <td>Nubank</td>
+                                    <td>R$204,00</td>
+                                    <td>
+                                        <div>
+                                            <a href="#"><span><i class="bi bi-pencil"></i></span></a>
+                                            <a href="#"><span><i class="bi bi-paperclip"></i></span></a>
+                                            <a href="#"><span><i class="bi bi-trash"></i></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: red;">
+                                        Pendente <span><i class="bi bi-x-circle-fill"></i></span>
+                                    </td>
+                                    <td>18/11/2023</td>
+                                    <td>Compra do mês</td>
+                                    <td>
+                                        <span><i class="bi bi-cart3"></i></span>
+                                        Supermercado
+                                    </td>
+                                    <td>Inter</td>
+                                    <td>R$400,00</td>
+                                    <td>
+                                        <div>
+                                            <a href="#"><span><i class="bi bi-pencil"></i></span></a>
+                                            <a href="#"><span><i class="bi bi-paperclip"></i></span></a>
+                                            <a href="#"><span><i class="bi bi-trash"></i></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: green;">
+                                        Pago <span><i class="bi bi-check-circle-fill"></i></span>
+                                    </td>
+                                    <td>18/11/2023</td>
+                                    <td>Compra do mês</td>
+                                    <td>
+                                        <span><i class="bi bi-cart3"></i></span>
+                                        Supermercado
+                                    </td>
+                                    <td>Nubank</td>
+                                    <td>R$204,00</td>
+                                    <td>
+                                        <div>
+                                            <a href="#"><span><i class="bi bi-pencil"></i></span></a>
+                                            <a href="#"><span><i class="bi bi-paperclip"></i></span></a>
+                                            <a href="#"><span><i class="bi bi-trash"></i></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: red;">
+                                        Pendente <span><i class="bi bi-x-circle-fill"></i></span>
+                                    </td>
+                                    <td>18/11/2023</td>
+                                    <td>Compra do mês</td>
+                                    <td>
+                                        <span><i class="bi bi-cart3"></i></span>
+                                        Supermercado
+                                    </td>
+                                    <td>Inter</td>
+                                    <td>R$400,00</td>
+                                    <td>
+                                        <div>
+                                            <a href="#"><span><i class="bi bi-pencil"></i></span></a>
+                                            <a href="#"><span><i class="bi bi-paperclip"></i></span></a>
+                                            <a href="#"><span><i class="bi bi-trash"></i></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

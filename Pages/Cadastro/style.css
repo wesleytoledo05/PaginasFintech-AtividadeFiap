@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap');
+
+body {
+    font-family: "roboto condensed";
+}
+
+header {
+    padding: 10px;
+    text-align: left;
+}
+
+.logo-deitada {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.box-area {
+    width: 930px;
+}
+
+.btn-01 {
+    background-color: #993399;
+    color: white;
+}
+
+.right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+
+    .left-box {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .right-box {
+        padding: 20px;
+    }
+
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logo-deitada {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
